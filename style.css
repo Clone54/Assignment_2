@@ -139,9 +139,6 @@ footer{
     align-items: center;
     justify-content: center;
 }
-.fut{
-    margin-top: 150px;
-}
 
 @media (max-width: 576px) {
     .mobile-padding {

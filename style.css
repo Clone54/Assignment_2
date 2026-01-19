@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+:root {
+    --bg-dark: #12042b;
+    --card-bg: #1d0b3d;
+    --brand-gradient: linear-gradient(90deg, #ff00ff 0%, #ffcc00 100%);
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.gradient-text {
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero{
+    background-image: url(assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+.hero-circle {
+    background-image: url(assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 390px;
+    height: 390px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 8px solid #2A186C;
+}
+
+.h_content{
+    margin: 30px auto;
+}
+
+.badge-new {
+    background: #00ff88;
+    width: 75px;
+    height: 38px;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btn-spotify {
+    background: var(--brand-gradient);
+    font-weight: 600;
+}
+
+.card-glass {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.card-glass:hover {
+    transform: translateY(-5px);
+}
+
+.atp{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.st{
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+    .mobile-padding {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}

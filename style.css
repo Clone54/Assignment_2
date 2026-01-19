@@ -122,12 +122,6 @@ body {
     transition: all 0.3s ease;
 }
 
-.social-icon-box i {
-    background: linear-gradient(135deg, #ff00ff, #ffcc00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .social-icon-box:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-3px);
@@ -144,6 +138,9 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.fut{
+    margin-top: 150px;
 }
 
 @media (max-width: 576px) {
@@ -180,10 +177,9 @@ footer{
         right: -17px;
     }
     footer{
-        background-size: contain  auto; 
+        background-size: 200%  auto;
         background-position: center 10%;
-        height: 320px;
-        padding-top: 20px;
+        height: 190px;
         object-fit: contain;
     }
     .foot{
@@ -192,12 +188,20 @@ footer{
     }
     .foot-icons{
         font-size: 12px !important;
-        gap: 15px !important;
+        gap: 5px !important;
         max-width: 90%;
         flex-wrap: wrap;
     }
     .foot-icons img{
         width: 18px;
         height: 18px;
+    }
+    .fut{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0px;
     }
 }
